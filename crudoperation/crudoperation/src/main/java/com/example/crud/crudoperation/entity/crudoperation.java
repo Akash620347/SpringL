@@ -1,4 +1,4 @@
-package com.start.akash;
+package com.example.crud.crudoperation.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -6,22 +6,22 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.*;
 
+import java.util.Collection;
+import java.util.Iterator;
+
+@Entity
+@AllArgsConstructor
+@NoArgsConstructor
 @Getter
 @Setter
-@Entity
-//constructor
-@AllArgsConstructor
-//default constructor
-@NoArgsConstructor
-//to print the data in the terminal by taking all values.
 @ToString
-
-
-public class SalesEntity {
+public class crudoperation{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+    private int id;
     private String name;
     private String city;
     private String status;
+
 }
+
